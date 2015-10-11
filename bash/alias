@@ -3,3 +3,4 @@
 alias bec='bundle exec cucumber'
 alias c='cd ~/code'
 alias w='cd ~/workspace'
+alias subl='open -a "Sublime Text"'
