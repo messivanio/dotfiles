@@ -7,7 +7,7 @@ export BASH_DIR=~/dotfiles/bash
 . $BASH_DIR/prompt
 
 case $(uname) in
-	'Linux')  export CHRUBY_DIR='/usr/local/share/chruby' ;;
+  'Linux')  export CHRUBY_DIR='/usr/local/share/chruby' ;;
   'Darwin') export CHRUBY_DIR='/usr/local/opt/chruby/share/chruby' ;;
 esac
 
