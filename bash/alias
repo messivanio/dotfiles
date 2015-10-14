@@ -3,4 +3,8 @@
 alias bec='bundle exec cucumber'
 alias c='cd ~/code'
 alias w='cd ~/workspace'
-alias subl='open -a "Sublime Text"'
+
+case $(uname) in
+	Linux)  alias subl='/usr/bin/subl' ;;
+  Darwin) alias subl='open -a "Sublime Text"' ;;
+esac
