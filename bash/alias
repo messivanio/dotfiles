@@ -6,6 +6,6 @@ alias w='cd ~/workspace'
 alias vu='vagrant up'
 
 case $(uname) in
-	Linux)  alias subl='/usr/bin/subl' ;;
+  Linux)  alias subl='/usr/bin/subl' ;;
   Darwin) alias subl='open -a "Sublime Text"' ;;
 esac
