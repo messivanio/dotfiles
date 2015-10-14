@@ -3,6 +3,7 @@
 alias bec='bundle exec cucumber'
 alias c='cd ~/code'
 alias w='cd ~/workspace'
+alias vu='vagrant up'
 
 case $(uname) in
 	Linux)  alias subl='/usr/bin/subl' ;;
