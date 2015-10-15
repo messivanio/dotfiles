@@ -5,6 +5,7 @@ export BASH_DIR=~/dotfiles/bash
 . $BASH_DIR/variables
 . $BASH_DIR/alias
 . $BASH_DIR/prompt
+. $BASH_DIR/functions
 
 case $(uname) in
   'Linux')  export CHRUBY_DIR='/usr/local/share/chruby' ;;
