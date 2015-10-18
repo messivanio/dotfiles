@@ -4,6 +4,7 @@ alias be='bundle exec'
 alias bec='bundle exec cucumber'
 alias c='cd ~/code'
 alias w='cd ~/workspace'
+alias v='vagrant'
 alias vd='vagrant destroy'
 alias vu='vagrant up'
 
