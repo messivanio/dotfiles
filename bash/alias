@@ -7,6 +7,7 @@ alias w='cd ~/workspace'
 alias v='vagrant'
 alias vd='vagrant destroy'
 alias vu='vagrant up'
+alias dc='docker-compose'
 
 case $(uname) in
   Linux)  alias subl='/usr/bin/subl' ;;
