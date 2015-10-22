@@ -8,6 +8,8 @@ alias v='vagrant'
 alias vd='vagrant destroy'
 alias vu='vagrant up'
 alias dc='docker-compose'
+alias d='docker'
+alias start-docker="bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"
 alias reload-dotfiles='source ~/dotfiles/bash/.bashrc'
 
 case $(uname) in
