@@ -8,6 +8,7 @@ alias v='vagrant'
 alias vd='vagrant destroy'
 alias vu='vagrant up'
 alias dc='docker-compose'
+alias reload-dotfiles='source ~/dotfiles/bash/.bashrc'
 
 case $(uname) in
   Linux)  alias subl='/usr/bin/subl' ;;
