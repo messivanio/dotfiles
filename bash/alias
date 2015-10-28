@@ -3,15 +3,15 @@
 alias be='bundle exec'
 alias bec='bundle exec cucumber'
 alias c='cd ~/code'
-alias w='cd ~/workspace'
+alias d='docker'
+alias dc='docker-compose'
+alias de='docker exec -it'
+alias reload-dotfiles='source ~/dotfiles/bash/.bashrc'
+alias start-docker="bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"
 alias v='vagrant'
 alias vd='vagrant destroy'
 alias vu='vagrant up'
-alias dc='docker-compose'
-alias d='docker'
-alias de='docker exec -it'
-alias start-docker="bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"
-alias reload-dotfiles='source ~/dotfiles/bash/.bashrc'
+alias w='cd ~/workspace'
 
 case $(uname) in
   Linux)  alias subl='/usr/bin/subl -a' ;;
