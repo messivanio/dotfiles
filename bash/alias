@@ -13,6 +13,6 @@ alias start-docker="bash --login '/Applications/Docker/Docker Quickstart Termina
 alias reload-dotfiles='source ~/dotfiles/bash/.bashrc'
 
 case $(uname) in
-  Linux)  alias subl='/usr/bin/subl' ;;
-  Darwin) alias subl='open -a "Sublime Text"' ;;
+  Linux)  alias subl='/usr/bin/subl -a' ;;
+  Darwin) alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -a' ;;
 esac
