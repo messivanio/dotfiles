@@ -15,4 +15,4 @@ esac
 source $CHRUBY_DIR/chruby.sh
 source $CHRUBY_DIR/auto.sh
 
-chruby ruby 2.2.3
+chruby ruby-2.2.3
