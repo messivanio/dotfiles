@@ -12,7 +12,7 @@ alias deploy-to-heroku='git push heroku master && heroku run rake db:migrate'
 alias docker-ip='docker-machine env default | grep DOCKER_HOST'
 alias r='bin/rails'
 alias rk='bin/rake'
-alias rdm'bin/rake db:migrate'
+alias rdm='bin/rake db:migrate'
 alias reload-dotfiles='source ~/dotfiles/bash/.bashrc'
 alias start-docker="bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"
 alias update-ubuntu='sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade'
