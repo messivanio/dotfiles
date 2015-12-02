@@ -3,6 +3,7 @@
 alias ..='cd ..'
 alias be='bundle exec'
 alias bec='bundle exec cucumber'
+alias beg='bundle exec guard'
 alias bi='bundle install'
 alias c='cd ~/code'
 alias d='docker'
