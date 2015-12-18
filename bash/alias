@@ -17,6 +17,7 @@ alias docker-remove-dangling-images='docker images --quiet --filter=dangling=tru
 alias r='bin/rails'
 alias rk='bin/rake'
 alias rdm='bin/rake db:migrate'
+alias rgm='rails g migration'
 alias reload-dotfiles='source ~/dotfiles/bash/.bashrc'
 alias start-docker="bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"
 alias update-ubuntu='sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade'
