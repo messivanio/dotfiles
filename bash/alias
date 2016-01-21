@@ -28,7 +28,16 @@ alias vs='vagrant snapshot'
 alias vu='vagrant up'
 alias w='cd ~/workspace'
 
+
+
 case $(uname) in
-  Linux)  alias subl='/usr/bin/subl -a' ;;
-  Darwin) alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -a' ;;
+  Linux)  
+		alias subl='/usr/bin/subl -a'
+		alias pomodoro-start="sleep 1500 && notify-send 'End of pomodoro' 'Pomodoro' & "
+		alias pomodoro-long-break="sleep 900 && notify-send 'End of long break' 'Pomodoro' & "
+		alias pomodoro-short-break="sleep 300 && notify-send 'End of short break' 'Pomodoro' & "
+		;;
+  Darwin) 
+		alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -a'
+		;;
 esac
