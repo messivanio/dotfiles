@@ -27,8 +27,7 @@ alias vd='vagrant destroy'
 alias vs='vagrant snapshot'
 alias vu='vagrant up'
 alias w='cd ~/workspace'
-
-
+alias xcode-install-command-line-tools='xcode-select --install'
 
 case $(uname) in
   Linux)  
