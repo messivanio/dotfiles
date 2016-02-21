@@ -32,6 +32,7 @@ alias xcode-install-command-line-tools='xcode-select --install'
 case $(uname) in
   Linux)  
 		alias subl='/usr/bin/subl -a'
+		alias open-ports='sudo netstat -tulpn | grep LISTEN'
 		;;
   Darwin) 
 		alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -a'
