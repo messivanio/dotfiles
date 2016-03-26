@@ -23,21 +23,21 @@ alias rk='bin/rake'
 alias rdm='bin/rake db:migrate'
 alias rgm='rails g migration'
 alias reload-dotfiles='source ~/dotfiles/bash/.bashrc'
-alias start-docker="bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"
-alias update-ubuntu='sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade'
 alias v='vagrant'
 alias vd='vagrant destroy'
 alias vs='vagrant snapshot'
 alias vu='vagrant up'
 alias w='cd ~/workspace'
-alias xcode-install-command-line-tools='xcode-select --install'
 
 case $(uname) in
   Linux)  
-		alias subl='/usr/bin/subl -a'
 		alias open-ports='sudo netstat -tulpn | grep LISTEN'
+		alias subl='/usr/bin/subl -a'
+		alias update-ubuntu='sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade'
 		;;
   Darwin) 
+		alias start-docker="bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"
 		alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -a'
+		alias xcode-install-command-line-tools='xcode-select --install'
 		;;
 esac
