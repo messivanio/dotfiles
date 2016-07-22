@@ -40,5 +40,6 @@ case $(uname) in
 		alias start-docker="bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"
 		alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -a'
 		alias xcode-install-command-line-tools='xcode-select --install'
+		alias screensaver='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
 		;;
 esac
