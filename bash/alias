@@ -28,7 +28,7 @@ alias v='vagrant'
 alias vd='vagrant destroy'
 alias vs='vagrant snapshot'
 alias vu='vagrant up'
-alias vu='vagrant up && vagrant ssh'
+alias vus='vagrant up && vagrant ssh'
 alias w='cd ~/workspace'
 
 case $(uname) in
