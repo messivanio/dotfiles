@@ -16,9 +16,6 @@ case $(uname) in
 	;;
 esac
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
 if [ -f $BASH_COMPLETION_DIR ]; then
 	. $BASH_COMPLETION_DIR
 else
