@@ -10,18 +10,11 @@ export BASH_DIR=~/dotfiles/bash
 case $(uname) in
   'Linux')
 		BASH_COMPLETION_DIR=/etc/bash_completion 
-		export CHRUBY_DIR='/usr/local/share/chruby' 
 	;;
   'Darwin')
 		BASH_COMPLETION_DIR=$(brew --prefix)/etc/bash_completion 
-		export CHRUBY_DIR='/usr/local/opt/chruby/share/chruby'
 	;;
 esac
-
-source $CHRUBY_DIR/chruby.sh
-source $CHRUBY_DIR/auto.sh
-
-chruby ruby-2.2.3
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
