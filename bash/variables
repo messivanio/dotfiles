@@ -7,5 +7,3 @@ export LANG=pt_BR.UTF-8
 # git editor
 export EDITOR="subl -w"
 
-# Always enable colored `grep` output.
-export GREP_OPTIONS='--color=auto'

@@ -18,6 +18,7 @@ alias docker-remove-dangling-images='docker images --quiet --filter=dangling=tru
 alias gc='git add . && git commit -m '
 alias g='grails'
 alias gra='grails run-app'
+alias grep='grep -n --color'
 alias python-http-server='python -m SimpleHTTPServer'
 alias r='bin/rails'
 alias rk='bin/rake'
