@@ -35,11 +35,13 @@ case $(uname) in
 		alias open-ports='sudo netstat -tulpn | grep LISTEN'
 		alias subl='/usr/bin/subl -a'
 		alias update-ubuntu='sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade'
+		alias install-bash-completion='sudo apt-get install bash-completion'
 		;;
   Darwin) 
 		alias start-docker="bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"
 		alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -a'
 		alias xcode-install-command-line-tools='xcode-select --install'
 		alias screensaver='open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app'
+		alias install-bash-completion='brew install bash-completion && brew tap homebrew/completions'
 		;;
 esac
