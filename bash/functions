@@ -7,3 +7,7 @@ function mk() {
 function code () { 
 	VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $*; 
 }
+
+function generate_password() {
+  openssl rand -base64 $1
+}
