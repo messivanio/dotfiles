@@ -7,3 +7,5 @@ export LANG=pt_BR.UTF-8
 # git editor
 export EDITOR="subl -w"
 
+PATH=$PATH:$BASH_DIR/generators/
+export PATH
