@@ -5,19 +5,30 @@ tee docker-compose.yml  << EOF
 
 version: '2.1'
 services:
+  go:
+    image: golang:1.8.1-alpine
+    entrypoint: sh
+    volumes:
+      - ./src/:/go/src/
+
   web:
     build: .
+    volumes:
+      - .:/some_folder_inside_containder
     depends_on:
       db:
         condition: service_healthy
       redis:
         condition: service_started
+  
   redis:
     image: redis
+  
   db:
     image: redis
     healthcheck:
       test: "exit 0"
+  
   php:
     image: php
     entrypoint:
