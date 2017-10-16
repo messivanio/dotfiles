@@ -25,5 +25,5 @@ function __prompt_command() {
         PS1+="${Red}:( Something Wrong :( Error Code: ${EXIT}${RCol}\n\n\n"      # Add red if exit code non 0
     fi
 
-    PS1+="${Gre}\u@${BYel}\H: ${RCol}\w$(__git_ps1) \n${RCol}$ ${RCol}"
+    PS1+="${Gre}\u@${BYel}\H: ${RCol}\w$(__git_ps1) \n${RCol}\$ ${RCol}"
 }
