@@ -11,3 +11,15 @@ function code () {
 function generate_password() {
   openssl rand -base64 $1
 }
+
+function ssh_mount() {
+	mkdir -p $2
+	case $(uname) in
+	  Linux)  
+			sshfs $1 $2 -o auto_cache
+			;;
+	  Darwin) 
+			sshfs $1 $2 -o auto_cache,defer_permissions,noappledouble
+			;;
+	esac
+}
