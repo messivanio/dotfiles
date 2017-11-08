@@ -23,7 +23,7 @@ alias docker-remove-dangling-images='docker images --quiet --filter=dangling=tru
 alias docker-remove-dangling-volumes='docker volume rm `docker volume ls -q -f dangling=true`'
 alias g='git'
 alias ga='git add'
-alias gs='git status --short --branch'
+alias gs='git status'
 alias gcm='git commit -m '
 alias gco='git checkout'
 alias gcob='git checkout -b'
