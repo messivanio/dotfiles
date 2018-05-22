@@ -10,7 +10,7 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 # git editor
 export EDITOR="subl -w"
 
-PATH=$PATH:$BASH_DIR/generators/
+PATH=$PATH:$BASH_DIR/generators/:~/apps/
 export PATH
 
 # set 256 color profile where possible
