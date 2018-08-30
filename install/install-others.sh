@@ -1,0 +1,1 @@
+sudo apt install -y firefox vim glances tldr
