@@ -7,4 +7,4 @@ sudo locale-gen pt_BR pt_BR.UTF-8
 cd ~ && rm -rf ~/dotfiles && git clone https://github.com/messivanio/dotfiles.git
 grep 'source ~/dotfiles/bash/.bashrc' ~/.bashrc || echo 'source ~/dotfiles/bash/.bashrc' >> ~/.bashrc
 
-
+ln -s ~/dotfiles/.vimrc ~/.vimrc

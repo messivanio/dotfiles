@@ -17,3 +17,5 @@ nmap <silent> <BS> :nohlsearch<CR>
 set history=1000
 set undolevels=1000
 
+colo elflord
+syntax on
