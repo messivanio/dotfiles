@@ -7,8 +7,7 @@ export LANG=pt_BR.UTF-8
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
-# git editor
-export EDITOR="subl -w"
+export EDITOR="vim"
 
 PATH=$PATH:$BASH_DIR/generators/:~/apps/
 export PATH
