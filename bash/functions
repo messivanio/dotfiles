@@ -23,3 +23,32 @@ function ssh_mount() {
 			;;
 	esac
 }
+
+function get_certificate_from() {
+	  SITE=$1
+	  PORT=$2
+    openssl s_client -showcerts -connect $SITE:$PORT </dev/null 2>/dev/null|openssl x509 -outform PEM >$SITE.pem
+    openssl x509 -outform der -in $SITE.pem -out $SITE.crt
+    ls $SITE.*
+}
+
+function add_certificate_to_ubuntu(){
+    
+    if [ ! -f $.crt ]; then
+        echo "I can't find $1.crt file."
+        return 123
+    fi    
+
+    sudo mkdir  /usr/local/share/ca-certificates/$1
+    sudo chmod 755 /usr/local/share/ca-certificates/$1
+    sudo cp $1.crt /usr/local/share/ca-certificates/$1/.
+    sudo chmod 644 /usr/local/share/ca-certificates/$1/$1.crt
+    sudo update-ca-certificates
+}
+
+function generate_self_signed_certificate(){
+	openssl req -newkey rsa:2048 -nodes -keyout key.pem -x509 -days 365 -out certificate.pem
+	openssl x509 -text -noout -in certificate.pem
+	openssl pkcs12 -inkey key.pem -in certificate.pem -export -out certificate.p12
+	openssl pkcs12 -in certificate.p12 -noout -info
+}
