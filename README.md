@@ -8,3 +8,8 @@ My [dotfiles](https://dotfiles.github.io/).
     source ~/dotfiles/bash/.bashrc
     sudo timedatectl set-timezone America/Sao_Paulo
     mkdir -p ~/code/agora
+
+Or...
+
+    git clone clone ssh://git@github.com/messivanio/dotfiles.git
+
