@@ -52,3 +52,8 @@ function generate_self_signed_certificate(){
 	openssl pkcs12 -inkey key.pem -in certificate.pem -export -out certificate.p12
 	openssl pkcs12 -in certificate.p12 -noout -info
 }
+
+function search-git(){
+	git grep $@ $(git rev-list --all)
+}
+
