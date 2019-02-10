@@ -11,5 +11,5 @@ My [dotfiles](https://dotfiles.github.io/).
 
 Or...
 
-    git clone clone ssh://git@github.com/messivanio/dotfiles.git
+    git clone ssh://git@github.com/messivanio/dotfiles.git
 
