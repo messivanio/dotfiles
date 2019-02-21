@@ -57,3 +57,7 @@ function search-git(){
 	git grep $@ $(git rev-list --all)
 }
 
+function remote-bash(){
+	ssh $1 "bash -s" -- < $2
+}
+
