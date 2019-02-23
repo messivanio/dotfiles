@@ -12,4 +12,7 @@ sudo add-apt-repository -y \
   stable"
 sudo apt-get update -y
 sudo apt-get install -y docker-ce
+sudo apt-get install -y docker-compose
+sudo usermod -aG docker $USER
 sudo docker run hello-world
+echo "Now, logout and login, please"
