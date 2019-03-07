@@ -9,7 +9,7 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 export EDITOR="vim"
 
-PATH=$PATH:$BASH_DIR/generators/:~/apps/
+PATH=$PATH:$BASH_DIR/generators/:~/apps/:/usr/local/go/bin
 export PATH
 
 # set 256 color profile where possible
