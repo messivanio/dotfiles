@@ -24,3 +24,5 @@ sudo mv node_exporter.service /etc/systemd/system/.
 sudo systemctl daemon-reload
 
 sudo service node_exporter start
+
+sudo service node_exporter status
