@@ -25,9 +25,9 @@ function ssh_mount() {
 }
 
 function get_certificate_from() {
-	  SITE=$1
-	  PORT=$2
-    openssl s_client -showcerts -connect $SITE:$PORT </dev/null 2>/dev/null|openssl x509 -outform PEM >$SITE.pem
+	SITE=$1
+	PORT=$2
+    openssl s_client -showcerts -connect $SITE:${PORT:-443} </dev/null 2>/dev/null|openssl x509 -outform PEM >$SITE.pem
     openssl x509 -outform der -in $SITE.pem -out $SITE.crt
     ls $SITE.*
 }
