@@ -34,7 +34,7 @@ function get_certificate_from() {
 
 function add_certificate_to_ubuntu(){
     
-    if [ ! -f $.crt ]; then
+    if [ ! -f $1.crt ]; then
         echo "I can't find $1.crt file."
         return 123
     fi    
