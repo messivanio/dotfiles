@@ -71,6 +71,7 @@ alias vs='vagrant snapshot'
 alias vu='vagrant up'
 alias vus='vagrant up && vagrant ssh'
 alias w='cd ~/workspace'
+alias wk='watch kubectl get all -o wide'
 
 case $(uname) in
   Linux)  
