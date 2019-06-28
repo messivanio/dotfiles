@@ -26,6 +26,7 @@ alias docker-remove-all-containers-and-images='docker rm -f $(docker ps -a -q) |
 alias docker-remove-dangling-images='docker images --quiet --filter=dangling=true | xargs docker rmi'
 alias docker-remove-dangling-volumes='docker volume rm `docker volume ls -q -f dangling=true`'
 alias docker-show-volume-mountpoint="docker volume inspect --format '{{ .Mountpoint }}'"
+alias docker-dockerfile-from-image='docker history --no-trunc --format "{{.CreatedBy}}" '
 alias dsp='docker system prune -f'
 alias ds='docker service'
 alias e='exit'
