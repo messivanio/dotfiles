@@ -4,7 +4,12 @@ export BASH_DIR=~/dotfiles/bash
 
 . $BASH_DIR/variables
 . $BASH_DIR/alias
-. $BASH_DIR/prompt
+
+if [[ $- == *i* ]]
+then
+  . $BASH_DIR/prompt
+fi
+
 . $BASH_DIR/functions
 
 case $(uname) in
