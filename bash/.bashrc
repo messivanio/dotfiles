@@ -26,3 +26,5 @@ if [ -f $BASH_COMPLETION_DIR ]; then
 else
 	echo "Please install bash-completion"
 fi
+
+. $BASH_DIR/complete

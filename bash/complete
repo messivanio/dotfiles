@@ -1,0 +1,4 @@
+
+complete -F __start_kubectl k
+source <(kubectl completion bash)
+
