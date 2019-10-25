@@ -84,7 +84,7 @@ case $(uname) in
   Linux)  
 		alias open-ports='sudo netstat -tulpn | grep LISTEN'
 		alias subl='/usr/bin/subl -a'
-		alias update-everything='sudo apt-get update -y; sudo apt-get upgrade -y; sudo apt-get dist-upgrade -y; sudo apt autoremove -y'
+		alias update-everything='sudo apt-get update -y; sudo apt-get upgrade -y --fix-broken; sudo apt-get dist-upgrade -y; sudo apt autoremove -y'
 		alias install-bash-completion='sudo apt-get install bash-completion'
 		;;
   Darwin) 
