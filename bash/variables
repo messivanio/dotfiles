@@ -8,6 +8,7 @@ export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 export EDITOR="vim"
+export GOPATH=$HOME/code/go
 
 PATH=$PATH:$BASH_DIR/generators/:~/apps/:/usr/local/go/bin
 export PATH
