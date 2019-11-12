@@ -34,6 +34,15 @@ prompt_git() {
     fi
 }
 
+kube_ps1()
+{
+    CONTEXT=$(cat ~/.kube/config | grep "current-context:" | sed "s/current-context: //")
+
+    if [ -n "$CONTEXT" ]; then
+        echo "(k8s: ${CONTEXT})"
+    fi
+}
+
 set_prompts() {
     local black=""
     local blue=""
@@ -108,6 +117,8 @@ set_prompts() {
     PS1+="\[$reset$white\]: "
     PS1+="\[$green\]\w" # working directory
     PS1+="\$(prompt_git \"$white on $cyan\")" # git repository details
+    PS1+="\[$yellow\]"
+    PS1+=" `kube_ps1`" # git repository details
     PS1+="\n"
     PS1+="\[$reset$white\]\$ \[$reset\]" # $ (and reset color)
 
