@@ -1,1 +1,1 @@
-sudo apt install -y firefox vim glances tldr
+sudo apt install -y firefox vim glances tldr cifs-utils
