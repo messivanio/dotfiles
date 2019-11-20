@@ -4,10 +4,6 @@ function mk() {
   mkdir -p "$@" && cd "$@"
 }
 
-function code () { 
-	VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $*; 
-}
-
 function dcc () {
     docker-compose down && docker-compose build "$@" && docker-compose up "$@"
 }
