@@ -47,6 +47,7 @@ alias gpt="git push --follow-tags --tags"
 alias gpsh='git push'
 alias gpt='git push --tags --follow-tags'
 alias grep='grep -n --color'
+alias cgrep='grep --color=always'
 alias h='cd ~'
 alias jn='jupyter notebook'
 alias k='kubectl'
