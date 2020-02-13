@@ -64,3 +64,7 @@ function remote-bash(){
 function changing-pods() {
 	watch "kubectl get pods $@ -o wide | grep -v Running"
 }
+
+function how-many-pods() {
+	watch "kubectl get pods $@ -o wide | tail -n +2 | wc -l"
+}
