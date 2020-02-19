@@ -68,3 +68,25 @@ function changing-pods() {
 function how-many-pods() {
 	watch "kubectl get pods $@ -o wide | tail -n +2 | wc -l"
 }
+function kubectl() {
+  kube=$(which kubectl)
+  echo "$@" | grep "deploy\|create\|apply\|set \|delete\|scale " 1>/dev/null
+
+  if [ $? -eq 0 ]; then
+    CURRENT_CLUSTER=$(kubectl config view --template='{{ range .contexts }}{{ if eq .name "'$(kubectl config current-context)'" }}{{ .context.cluster }}{{ end }}{{ end }}')
+
+    FILE=".k8s-clusters"
+    if test -f "$FILE"; then
+      source ${FILE}
+
+      if [[ "$K8S_CLUSTERS" != "$CURRENT_CLUSTER" ]]; then
+        echo "Current k8s Cluster: ${CURRENT_CLUSTER}"
+        echo "K8S Target Clusters (from .k8s-clusters file): ${K8S_CLUSTERS}"
+        echo "WRONG CLUSTER!!! Exit."
+        return 1
+      fi
+    fi
+  fi
+    
+  command $kube "${@}"
+}
