@@ -61,3 +61,6 @@ function remote-bash(){
 	ssh $1 "bash -s" -- < $2
 }
 
+function changing-pods() {
+	watch "kubectl get pods $@ -o wide | grep -v Running"
+}
