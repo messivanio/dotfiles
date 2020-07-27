@@ -37,7 +37,7 @@ prompt_git() {
 kube_ps1()
 {
     if type "kubectl" > /dev/null && [ -f ~/.kube/config ]; then
-        echo "[k8s: `kubectl config current-context`]"
+        echo "[k8s: `kubectl config current-context` | ns: `kubectl config view --minify --output 'jsonpath={..namespace}'`]"
     fi
 }
 

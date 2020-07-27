@@ -5,7 +5,7 @@ function mk() {
 }
 
 function dcc () {
-    docker-compose down && docker-compose build "$@" && docker-compose up "$@"
+    docker-compose down --remove-orphans && docker-compose build "$@" && docker-compose up "$@"
 }
 
 function generate_password() {
@@ -62,7 +62,7 @@ function remote-bash(){
 }
 
 function changing-pods() {
-  watch "kubectl get pods $@ -o wide | grep -v Running"
+  watch "kubectl get pods $@ -o wide | grep -v Running | grep -v Completed"
 }
 
 function how-many-pods() {
