@@ -17,12 +17,13 @@ case $(uname) in
 		BASH_COMPLETION_DIR=/etc/bash_completion 
 	;;
   'Darwin')
-		BASH_COMPLETION_DIR=$(brew --prefix)/etc/bash_completion 
+		BASH_COMPLETION_DIR=/usr/local/etc/bash_completion.d
 	;;
 esac
 
-if [ -f $BASH_COMPLETION_DIR ]; then
-	. $BASH_COMPLETION_DIR
+if [ -d $BASH_COMPLETION_DIR ]; then
+	# . $BASH_COMPLETION_DIR
+	[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 else
 	echo "Please install bash-completion"
 fi
