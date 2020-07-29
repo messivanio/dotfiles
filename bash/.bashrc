@@ -12,6 +12,8 @@ fi
 
 . $BASH_DIR/functions
 
+. $BASH_DIR/completion/.git-completion.bash
+
 case $(uname) in
   'Linux')
 		BASH_COMPLETION_DIR=/etc/bash_completion 
