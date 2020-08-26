@@ -10,6 +10,8 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export EDITOR="vim"
 export GOPATH=$HOME/code/go
 
+export ANSIBLE_DIFF_ALWAYS="True"
+
 PATH=$PATH:$BASH_DIR/generators/:~/apps/:/usr/local/go/bin
 export PATH
 
