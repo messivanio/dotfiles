@@ -1,6 +1,6 @@
 function fish_prompt --description 'Informative prompt'
-    # #Save the return status of the previous command
-    # set -l last_pipestatus $pipestatus
+    #Save the return status of the previous command
+    set -l last_pipestatus $pipestatus
 
     # switch "$USER"
     #     case root toor
@@ -16,6 +16,27 @@ function fish_prompt --description 'Informative prompt'
     #             $USER (prompt_hostname) (set_color $fish_color_cwd) $PWD $pipestatus_string \
     #             (set_color normal)
     # end
+
+    # set -l pipestatus_string (__fish_print_pipestatus "[" "] " "|" (set_color $fish_color_status) \
+    #                                  (set_color --bold $fish_color_status) $last_pipestatus)
+
+    printf '\n'
+
+    if test $last_pipestatus -gt 0
+        set_color $fish_color_status
+        printf "Status: %s  " $last_pipestatus
+        set_color normal
+    end
+
+
+
+    if test $CMD_DURATION
+        # Show duration of the last command in seconds
+        set duration (echo "$CMD_DURATION 1000" | awk '{printf "%.3fs", $1 / $2}')
+        set color -dim normal
+        printf "it took "
+        printf $duration
+    end
 
     printf '\n'
 
@@ -35,14 +56,14 @@ function fish_prompt --description 'Informative prompt'
     printf (string replace $HOME '~' (pwd)) 
     set_color normal
 
-    if test -e .git/ 
+    if git rev-parse --git-dir > /dev/null 2>&1
         set_color 268bd2
         printf " [%s]" (git branch --show-current) 
     end
 
     if test -e ~/.kube/config; #and type "kubectl" > /dev/null
         set_color 2aa198
-        printf " [k8s: %s | ns: %s]" \
+        printf " [k8s: %s/%s]" \
         (kubectl config current-context) \
         (kubectl config view --minify --output 'jsonpath={..namespace}')
     end
