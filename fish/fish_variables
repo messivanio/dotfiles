@@ -11,8 +11,8 @@ SETUVAR _fish_abbr_be:bundle\x20exec
 SETUVAR _fish_abbr_bec:bundle\x20exec\x20cucumber
 SETUVAR _fish_abbr_c:cd\x20/home/messi/code
 SETUVAR _fish_abbr_d:docker
-SETUVAR _fish_abbr_dc:docker\x20compose
-SETUVAR _fish_abbr_dce:docker\x20compose\x20exec
+SETUVAR _fish_abbr_dc:docker\x2dcompose
+SETUVAR _fish_abbr_dce:docker\x2dcompose\x20exec
 SETUVAR _fish_abbr_de:docker\x20exec\x20\x2dit
 SETUVAR _fish_abbr_e:exit
 SETUVAR _fish_abbr_g:git
@@ -36,6 +36,8 @@ SETUVAR _fish_abbr_log__error:grep\x20\x2di\x20erro\x5c\x7ccaused
 SETUVAR _fish_abbr_log__warn__and__error:grep\x20\x2di\x20erro\x5c\x7cwarn\x5c\x7ccaused
 SETUVAR _fish_abbr_requirements_2D_install:ansible\x20galaxy\x20install\x20\x2dr\x20requirements\x2etxt\x20\x2d\x2dforce
 SETUVAR _fish_abbr_s:ssh
+SETUVAR _fish_abbr_sai:sudo\x20apt\x20install
+SETUVAR _fish_abbr_subl:subl\x20\x2d\x2dadd
 SETUVAR _fish_abbr_v:vagrant
 SETUVAR _fish_abbr_vd:vagrant\x20destroy
 SETUVAR _fish_abbr_vu:vagrant\x20up

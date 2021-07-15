@@ -10,8 +10,8 @@ abbr bec bundle exec cucumber
 abbr c cd ~/code
 
 abbr d docker
-abbr dc docker compose
-abbr dce docker compose exec
+abbr dc docker-compose
+abbr dce docker-compose exec
 abbr de docker exec -it
 
 abbr e exit 
@@ -40,6 +40,8 @@ abbr log_error grep -i "erro\|caused"
 abbr log_warn_and_error grep -i "erro\|warn\|caused"
 abbr requirements-install ansible galaxy install -r requirements.txt --force
 abbr s ssh
+abbr sai sudo apt install
+abbr subl subl --add
 
 abbr v vagrant
 abbr vd vagrant destroy
