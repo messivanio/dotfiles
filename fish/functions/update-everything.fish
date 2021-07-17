@@ -6,8 +6,3 @@ function update-everything
   asdf update
   asdf plugin update --all
 end
-
-sudo apt install -y libssl-dev bzip2 libreadline-dev sqlite
-
-
-!!!!!!!!!!!!!!!!!!!!
