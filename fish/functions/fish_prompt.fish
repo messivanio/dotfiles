@@ -4,7 +4,7 @@ function fish_prompt --description 'Informative prompt'
 
     printf '\n'
 
-    if test $last_pipestatus -gt 0
+    if test $last_pipestatus[1] != 0
         set_color $fish_color_status
         printf "Status: %s  " $last_pipestatus
         set_color normal
@@ -17,6 +17,7 @@ function fish_prompt --description 'Informative prompt'
         set color -dim normal
         printf "it took "
         printf $duration
+        set_color normal
     end
 
     printf '\n'
