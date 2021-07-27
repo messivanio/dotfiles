@@ -4,7 +4,7 @@ abbr .... cd ../../..
 
 abbr a cd ~/code/agora
 abbr an ansible 
-abbr ap ansible playbook
+abbr ap ansible-playbook
 abbr be bundle exec
 abbr bec bundle exec cucumber
 abbr c cd ~/code
