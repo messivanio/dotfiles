@@ -1,8 +1,8 @@
 function dcc
-  if $args
+  if test $args
     docker-compose rm --force --stop $argv 
   else
-    docker-compose down -v--remove-orphans
+    docker-compose down -v --remove-orphans
   end
   
 	docker-compose build $argv
