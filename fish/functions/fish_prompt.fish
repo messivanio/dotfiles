@@ -13,7 +13,12 @@ function fish_prompt --description 'Informative prompt'
     if test $CMD_DURATION
         # notify-send foo bar
         # Show duration of the last command in seconds
-        set duration (echo "$CMD_DURATION 1000" | awk '{printf "%.3fs", $1 / $2}')
+        if test $CMD_DURATION -ge 120000
+            set duration (echo "$CMD_DURATION 60000" | awk '{printf "%.1fmin", $1 / $2}')
+        else
+            set duration (echo "$CMD_DURATION 1000" | awk '{printf "%.3fs", $1 / $2}')
+        end
+
         set color -dim normal
         printf "it took "
         printf $duration
