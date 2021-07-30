@@ -5,4 +5,5 @@ function update-everything
   sudo apt autoremove -y
   asdf update
   asdf plugin update --all
+  brew upgrade
 end
