@@ -1,10 +1,9 @@
 function kubectl --description "A safer kubectl"
-  set kube (which kubectl)
-  set kube_command $argv[1] 
-  set unsafe_commands deploy create apply set delete scale
+  set kube_args $argv[1] 
+  set unsafe_commands deploy create apply set delete scale diff
 
-  if contains $kube_command $unsafe_commands
-    set CURRENT_CLUSTER ($kube config view --template='{{ range .contexts }}{{ if eq .name "'($kube config current-context)'" }}{{ .context.cluster }}{{ end }}{{ end }}')
+  if contains $kube_args $unsafe_commands
+    set CURRENT_CLUSTER (command kubectl config view --template='{{ range .contexts }}{{ if eq .name "'(command kubectl config current-context)'" }}{{ .context.cluster }}{{ end }}{{ end }}')
     set FILE ".k8s-clusters"
     read -x FILE_CONTENT < $FILE
     if test -e $FILE
@@ -19,6 +18,5 @@ function kubectl --description "A safer kubectl"
     end 
   end
 
-  $kube $argv
-
+  command kubectl $argv
 end
