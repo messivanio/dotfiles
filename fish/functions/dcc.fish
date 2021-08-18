@@ -1,7 +1,9 @@
 function dcc
-  if test $args
+  if test $argv
+    echo "Removing $argv"
     docker-compose rm --force --stop $argv 
   else
+    echo "Removing all containers and volumes"
     docker-compose down -v --remove-orphans
   end
   
