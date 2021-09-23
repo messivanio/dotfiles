@@ -20,7 +20,7 @@ function fish_prompt --description 'Informative prompt'
         end
 
         set color -dim normal
-        printf "it took "
+        printf "took "
         printf $duration
         set_color normal
     end
