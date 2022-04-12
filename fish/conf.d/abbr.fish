@@ -41,6 +41,7 @@ abbr log_warn_and_error grep -i "erro\|warn\|caused"
 
 abbr n cd ~/code/agora
 
+abbr r rails
 abbr requirements-install ansible galaxy install -r requirements.txt --force
 abbr s ssh
 abbr sai sudo apt install
