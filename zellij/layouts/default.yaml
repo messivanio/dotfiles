@@ -22,6 +22,7 @@ template:
 tabs:
 - name: dev
   direction: Vertical
+  focus: true
   parts:
   - direction: Vertical
     split_size:
