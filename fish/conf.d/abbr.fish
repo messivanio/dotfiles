@@ -47,3 +47,5 @@ abbr s ssh
 abbr v vagrant
 abbr vd vagrant destroy
 abbr vu vagrant up
+
+abbr z zellij
