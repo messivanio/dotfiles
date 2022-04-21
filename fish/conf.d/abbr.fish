@@ -38,7 +38,8 @@ abbr l ls -lha
 abbr log_error grep -i "erro\|caused"
 abbr log_warn_and_error grep -i "erro\|warn\|caused"
 
-abbr n nnn -de
+abbr n nnn -deH
+abbr nnn nnn -deH
 
 abbr r rails
 abbr requirements-install ansible galaxy install -r requirements.txt --force
