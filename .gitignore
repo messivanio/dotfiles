@@ -1,2 +1,5 @@
 fish/fish_variables
 fish/secrets.fish
+config/micro/backups
+config/micro/buffers
+config/micro/plug
