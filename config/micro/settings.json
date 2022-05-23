@@ -1,4 +1,5 @@
 {
+    "colorscheme": "messi-custom-tc",
     "diffgutter": true,
     "savecursor": true,
     "softwrap": true,
