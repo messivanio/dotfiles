@@ -44,6 +44,7 @@ abbr nnn nnn -deH
 abbr r rails
 abbr requirements-install ansible galaxy install -r requirements.txt --force
 abbr s ssh
+abbr t cd ~/code/tasks
 
 abbr v vagrant
 abbr vd vagrant destroy
