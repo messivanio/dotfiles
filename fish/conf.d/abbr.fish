@@ -27,6 +27,7 @@ abbr gpl git pull
 abbr gps git push
 abbr gpt git push --follow-tags --tags
 abbr gs git status
+abbr gu gitui
 
 abbr h cd ~/
 
