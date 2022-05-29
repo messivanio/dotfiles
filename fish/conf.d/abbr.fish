@@ -15,6 +15,7 @@ abbr dce docker-compose exec
 abbr de docker exec -it
 
 abbr e exit
+abbr f fzf -i
 
 abbr g git
 abbr ga git add
@@ -34,10 +35,12 @@ abbr ka kubectl apply -f
 abbr kak kubectl apply -k
 abbr kdk kubectl delete -k
 
+
 abbr l ls -lha
 abbr log_error grep -i "erro\|caused"
 abbr log_warn_and_error grep -i "erro\|warn\|caused"
 
+abbr mf "micro (fzf -i)"
 abbr n nnn -deH
 abbr nnn nnn -deH
 
