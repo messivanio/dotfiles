@@ -45,6 +45,7 @@ abbr r rails
 abbr requirements-install ansible galaxy install -r requirements.txt --force
 abbr s ssh
 abbr t cd ~/code/tasks
+abbr tree exa --tree --long
 abbr tt cd ~/code/tasks/TODO-and-notes
 
 abbr v vagrant
