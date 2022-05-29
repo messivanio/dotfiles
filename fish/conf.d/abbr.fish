@@ -55,6 +55,6 @@ abbr v vagrant
 abbr vd vagrant destroy
 abbr vu vagrant up
 
-abbr we watchexec
+abbr w watchexec -c --
 
 abbr z zellij
