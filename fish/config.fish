@@ -13,3 +13,7 @@ if test -e ~/.config/fish/secrets.fish
 end
 
 set PATH $HOME/.cargo/bin $PATH
+
+if test -e /home/linuxbrew/.linuxbrew/bin/brew
+	eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+end
