@@ -15,6 +15,7 @@ function update-everything
   end
 
   if type -qs brew
+    sudo chown -R (whoami) /home/linuxbrew/
     brew upgrade
   end
 end
