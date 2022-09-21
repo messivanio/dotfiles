@@ -6,7 +6,8 @@ end
 
 set -U fish_greeting ""
 
-setxkbmap -model abnt -layout us -variant intl
+#setxkbmap -model abnt -layout us -variant intl
+setxkbmap -model abnt2 -layout br
 
 if test -e ~/.config/fish/secrets.fish
 	source ~/.config/fish/secrets.fish
