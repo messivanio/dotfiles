@@ -18,3 +18,5 @@ set PATH $HOME/.cargo/bin $PATH
 if test -e /home/linuxbrew/.linuxbrew/bin/brew
 	eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 end
+
+xgamma -gamma 0.65 -q
