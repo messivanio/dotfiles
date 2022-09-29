@@ -18,4 +18,8 @@ function update-everything
     sudo chown -R (whoami) /home/linuxbrew/
     brew upgrade
   end
+  
+  if type -qs topgrade
+    topgrade
+  end
 end
